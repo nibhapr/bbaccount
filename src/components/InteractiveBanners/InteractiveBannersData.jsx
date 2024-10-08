@@ -3,7 +3,7 @@ const InteractiveBannersData01 = [
         subtitle: "Branding",
         title: "Leading branding agency based in washington",
         btnLink: "/blogs/blog-post-layout-01",
-        img: "https://via.placeholder.com/798x577",
+        img: "public/assets/img/webplitho-demo-photography.webp",
         icon: "line-icon-Arrow-OutRight"
     },
     {
@@ -33,49 +33,49 @@ const InteractiveBannersData02 = [
     {
         subtitle: "Flexible",
         title: "Bundle of layout type different layout",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-photography.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Unique",
         title: "We are delivering beautiful products",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-restaurant.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Responsive",
         title: "True responsiveness modern responsive",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-seo-agency.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Modern",
         title: "Beautiful and modern latest page builder",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-vertical-portfolio.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Flexible",
         title: "Bundle of layout type different layout",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-split-portfolio.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Unique",
         title: "We are delivering beautiful products",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-startup.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Responsive",
         title: "True responsiveness modern responsive",
-        img: "https://via.placeholder.com/915x716",
+        img: "assets/img/webp/litho-demo-yoga-meditation.webp",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },

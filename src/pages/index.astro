@@ -1,24 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SliderComponents from '../components/SliderComponents';
+import Slider from '../components/Slider.astro';
 import "../assets/css/icons.css";
 import "../assets/css/global.css";
 import "../assets/css/pages.css";
-import FeatureComponets from '../components/FeatureComponents';
+import Feature from '../components/Feature.astro';
 import AppComponents from '../components/AppComponents';
-import TestimonialPage from '../components/TestimonialComponents';
+import Testimonial from '../components/Testimonial.astro';
 import TabComponents from '../components/TabComponents';
+import Tab from '../components/Tabview.astro';
 import SpecialComponents from '../components/SpecialComponents';
+import Last from '../components/SpecialComponents.astro';
 import TeamSlider from '../components/TeamSlider';
+import TeamSliderr from '../components/TeamSlider.astro';
+import Productslider from '../components/Productslider.astro';
 ---
 <AppComponents client:load />
-<Layout title="Welcome to B & B Accounting services.">
+<Layout title="Welcome to B & B Accounting services">
 <SliderComponents client:load/>
-<TeamSlider client:load/>
-<FeatureComponets client:load/>
-<TestimonialPage client:load/>
+<Productslider />
+<Feature />
+<Testimonial/>
 <TabComponents client:load/>
-<SpecialComponents client:load/>
+<Last />
 </Layout>
 
 
