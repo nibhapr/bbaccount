@@ -3,7 +3,7 @@ const InteractiveBannersData01 = [
         subtitle: "Branding",
         title: "Leading branding agency based in washington",
         btnLink: "/blogs/blog-post-layout-01",
-        img: "/assets/img/acc1.jpg",
+        img: "https://via.placeholder.com/798x577",
         icon: "line-icon-Arrow-OutRight"
     },
     {
@@ -33,39 +33,52 @@ const InteractiveBannersData02 = [
     {
         subtitle: "Tax preparation and filing UAE",
         title: "Bundle of layout type different layout",
-        img: "/assets/img/acc1.jpg",
+        img: "https://via.placeholder.com/915x716",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Financial statement preparation",
         title: "We are delivering beautiful products",
-        img: "/assets/img/acc2.jpg",
+        img: "https://via.placeholder.com/915x716",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Professional bookkeeping solutions",
         title: "True responsiveness modern responsive",
-        img: "/assets/img/acc3.jpg",
+        img: "https://via.placeholder.com/915x716",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Outsourced bookkeeping UAE",
         title: "Beautiful and modern latest page builder",
-        img: "/assets/img/acc3.jpg",
+        img: "https://via.placeholder.com/915x716",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
         subtitle: "Small business accounting services",
         title: "Bundle of layout type different layout",
-        img: "/assets/img/acc3.jpg",
+        img: "https://via.placeholder.com/915x716",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
-   
+    {
+        subtitle: "Unique",
+        title: "We are delivering beautiful products",
+        img: "https://via.placeholder.com/915x716",
+        btnTitle: "Learn more",
+        btnLink: "/page/about-us"
+    },
+    {
+        subtitle: "Responsive",
+        title: "True responsiveness modern responsive",
+        img: "https://via.placeholder.com/915x716",
+        btnTitle: "Learn more",
+        btnLink: "/page/about-us"
+    },
 ]
 
 const InteractiveBannersData03 = [

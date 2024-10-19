@@ -1,0 +1,141 @@
+---
+import { Col, Container, Row } from 'react-bootstrap';
+import { m } from 'framer-motion';
+import { InteractiveBannersData02 } from '../components/InteractiveBanners/InteractiveBannersData';
+---
+
+<section class="py-[130px] lg:py-[90px] md:py-[75px] sm:[50px] bg-[#f7f8fc] overflow-hidden">
+    <Container>
+        <Row className="justify-center">
+          <m.div className="col-xl-5 col-lg-6 col-md-8 col-sm-7 mb-20 text-center md:mb-[60px] sm:[44px]" >
+            <span class="mb-[20px] font-medium text-md font-serif uppercase inline-block text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]">Why choose us</span>
+            <h4 class="font-semibold -tracking-[1px] text-darkgray font-serif block heading-5">Beautifully handcrafted templates for your website</h4>
+          </m.div>
+        </Row>
+    </Container>
+  
+    <div class="slider-container relative overflow-hidden">
+      <div class="slider flex" id="slider">
+        {InteractiveBannersData02.concat(InteractiveBannersData02).map((banner, index) => (
+          <div class="card relative min-w-[300px] max-w-[400px] mx-4"
+               onmouseover="this.querySelector('.btn').style.opacity = '1'; this.querySelector('.btn').style.transform = 'translateY(0)';"
+               onmouseout="this.querySelector('.btn').style.opacity = '0'; this.querySelector('.btn').style.transform = 'translateY(20px)';">
+            <img src={banner.img} alt={banner.title} class="w-full h-auto object-cover" />
+            <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #1f232c 100%); opacity: 0.75;"></div>
+            <div class="card-content absolute inset-0 flex flex-col justify-end p-4 text-white">
+              <h3 style="background-color: #2563eb; width: 40%; border-radius: 5px; padding: 4px 4px;" class="text-xs uppercase font-semibold">{banner.subtitle}</h3>
+              <h2 class="text-lg font-bold">{banner.title}</h2>
+              <!-- Button: initially hidden, shown on hover with fade-in-up animation -->
+              <a href={banner.btnLink}
+                 class="btn"
+                 style="
+                   display: inline-block;
+                   background-color: #2563eb;
+                   padding: 8px 16px;
+                   border-radius: 4px;
+                   color: white;
+                   font-size: 14px;
+                   margin-top: 8px;
+                   text-decoration: none;
+                   cursor: pointer;
+                   transition: opacity 0.5s ease, transform 0.5s ease;
+                   opacity: 0; /* Hidden initially */
+                   transform: translateY(20px); /* Start position slightly down */
+                 "
+                 onmouseover="this.style.backgroundColor = '#1d4ed8';"
+                 onmouseout="this.style.backgroundColor = '#2563eb';">
+                {banner.btnTitle}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    
+      <!-- Carousel navigation buttons -->
+      <button class="prev" onclick="moveSlider(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlider(1)">&#10095;</button>
+    </div>
+    
+    <style>
+      /* Container for the slider */
+      .slider-container {
+        width: 100%;
+        height: 350px; /* Adjust to your desired height */
+        position: relative;
+        overflow: hidden;
+      }
+    
+      /* The slider itself */
+      .slider {
+        display: flex;
+        width: calc(300px * 6); /* Adjust based on the number of cards */
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .card {
+        flex-shrink: 0;
+        width: 300px;
+        height: 100%; /* Match height to the container */
+        overflow: hidden;
+      }
+    
+      /* Navigation buttons */
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding: 8px 16px;
+        cursor: pointer;
+        z-index: 100;
+      }
+    
+      .prev {
+        left: 10px;
+      }
+    
+      .next {
+        right: 10px;
+      }
+    
+      .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    </style>
+    
+    <script is:inline>
+      let sliderIndex = 0;
+      let interval;
+    
+      // Function to move the slider manually and automatically
+      function moveSlider(direction) {
+        const slider = document.getElementById('slider');
+        const totalCards = document.querySelectorAll('.slider .card').length;
+    
+        // Calculate the total width of the slider
+        const cardWidth = 300; // Each card's width (adjust if needed)
+        const visibleCards = Math.floor(document.querySelector('.slider-container').offsetWidth / cardWidth);
+        const maxIndex = totalCards - visibleCards; // Maximum scrollable index
+    
+        // Move the slider based on the direction
+        sliderIndex = (sliderIndex + direction + totalCards) % totalCards; // Loop around
+        slider.style.transform = `translateX(-${sliderIndex * cardWidth}px)`;
+      }
+    
+      // Auto slide the carousel
+      function autoSlide() {
+        interval = setInterval(() => {
+          moveSlider(1); // Move to the next card automatically every 3 seconds
+        }, 3000);
+      }
+    
+      // Stop the auto slide on mouseover, resume on mouseout
+      document.querySelector('.slider-container').addEventListener('mouseover', () => clearInterval(interval));
+      document.querySelector('.slider-container').addEventListener('mouseout', autoSlide);
+    
+      // Start auto-sliding when the page loads
+      autoSlide();
+    </script>
