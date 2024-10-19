@@ -1,41 +1,41 @@
 const TabData01 = [
     {
-        tabTitle: 'PLANNING',
+        tabTitle: 'Consultation',
         subtitle: 'MODERNIZED REDESIGN',
         tabicons: "",
-        title: 'Business Registration Dubai',
-        img: 'https://via.placeholder.com/800x625',
-        content: 'Ready to start your business in Dubai? [Your Company Name] offers expert business setup services to streamline the entire process. From initial planning and market research to company registration and compliance, our experienced team ensures a smooth and efficient setup. We handle all the paperwork, legal requirements, and government approvals, allowing you to focus on launching your business with confidence. Discover how our tailored solutions can turn your business vision into reality in Dubai',
+        title: 'Free Consultation',
+        img: '/assets/img/bb2.jpg',
+        content: 'Our team of experienced professionals will sit down with you to discuss your business needs in detail. We will provide personalized insights and expert advice tailored to your unique situation, ensuring you have all the information you need to make informed decisions. Whether you are just starting or looking to expand, we are here to help every step of the way',
         buttonTitle: "Discover Litho",
         buttonLink: "/"
     },
     {
-        tabTitle: 'RESEARCH',
+        tabTitle: 'Company Structure',
         subtitle: 'INNOVATIVE SOLUTIONS',
         tabicons: "",
-        title: 'Business research',
-        img: 'https://via.placeholder.com/800x625',
-        content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        title: 'Choosing the Right Company Structure in Dubai',
+        img: '/assets/img/bb2.jpg',
+        content: 'At B&B Account Services, we help you navigate the complexities of business formation in Dubai. Our experts will guide you in selecting the most suitable company type—be it a sole proprietorship, limited liability company (LLC), or free zone entity—based on your business goals and requirements',
         buttonTitle: "Discover Litho",
         buttonLink: "/"
     },
     {
-        tabTitle: 'TARGET',
+        tabTitle: 'Business Licenses',
         subtitle: 'MODERNIZED REDESIGN',
         tabicons: "",
-        title: 'Business target',
-        img: 'https://via.placeholder.com/800x625',
-        content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        title: 'Securing Business Licenses in Dubai',
+        img: '/assets/img/bb2.jpg',
+        content: 'At B&B Accounting Services, we specialize in assisting you with the entire licensing process in Dubai. Our experienced team will guide you through the necessary steps to obtain your business license, ensuring all documentation is in order and compliance requirements are met',
         buttonTitle: "Discover Litho",
         buttonLink: "/"
     },
     {
-        tabTitle: 'CAMPAIGN',
+        tabTitle: 'VISA PROCESSING',
         subtitle: 'INNOVATIVE SOLUTIONS',
         tabicons: "",
         title: 'Business campaign',
-        img: 'https://via.placeholder.com/800x625',
-        content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        img: '/assets/img/bb2.jpg',
+        content: 'we provide comprehensive support for visa processing in Dubai. Our knowledgeable team will guide you through the entire application process, ensuring all necessary documents are prepared accurately and submitted on time.',
         buttonTitle: "Discover Litho",
         buttonLink: "/"
     }
@@ -46,7 +46,7 @@ const TabData02 = [
         tabTitle: 'Development',
         tabicons: "ti-light-bulb",
         subtitle: 'Transform your ideas. We know that good design means good business.',
-        img: 'https://via.placeholder.com/800x550',
+        img: '/assets/img/bb2.jpg',
         title: 'We are idea driven, working with a strong focus on design and user experience.',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris.',
         buttonTitle: "watch a projects",
@@ -55,7 +55,7 @@ const TabData02 = [
     {
         tabTitle: 'Performance',
         tabicons: "ti-timer",
-        img: 'https://via.placeholder.com/800x550',
+        img: '/assets/img/bb2.jpg',
         title: 'We are idea driven, working with a strong focus on design and user experience.',
         subtitle: 'Transform your ideas. We know that good design means good business.',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris.',
@@ -65,7 +65,7 @@ const TabData02 = [
     {
         tabTitle: 'Analytics',
         tabicons: "ti-pie-chart",
-        img: 'https://via.placeholder.com/800x550',
+        img: '/assets/img/bb2.jpg',
         title: 'We are idea driven, working with a strong focus on design and user experience.',
         subtitle: 'Transform your ideas. We know that good design means good business.',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris.',
@@ -75,7 +75,7 @@ const TabData02 = [
     {
         tabTitle: 'Concept',
         tabicons: "ti-crown",
-        img: 'https://via.placeholder.com/800x550',
+        img: '/assets/img/bb2.jpg',
         title: 'We are idea driven, working with a strong focus on design and user experience.',
         subtitle: 'Transform your ideas. We know that good design means good business.',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris.',

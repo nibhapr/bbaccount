@@ -1,6 +1,6 @@
 import Tab01 from '../components/Tab/Tab01';
 import { m } from "framer-motion";
-import { TabData01 } from '../components/Tab/TabData';
+import { TabData01} from '../components/Tab/TabData';
 import { Col, Container,Row } from 'react-bootstrap';
 
 const TabComponents = () => {

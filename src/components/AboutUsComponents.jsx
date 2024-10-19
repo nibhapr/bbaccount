@@ -1,27 +1,11 @@
-import React from 'react'
-
-// Components
 import Buttons from '../components/Button/Buttons'
-import Clients from '../components/Clients/Clients'
-import Team from '../components/Team/Team'
-import IconWithText from '../components/IconWithText/IconWithText'
 import Lists from '../components/Lists/Lists'
-import Counter from '../components/Counters/Counter'
-import Overlap from './Overlap/Overlap'
-import CustomModal from '../components/CustomModal'
 import ClientCarouselPage from '../components/ClientCarousel'
-
 import { Navigation } from "swiper/modules";
 import { Col, Container, Row, Navbar } from 'react-bootstrap'
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { m } from 'framer-motion'
-import { Link as ScrollTo } from "react-scroll"
-// Data
-import { ClientData01 } from "../components/Clients/ClientsData";
-
-import { TeamData04 } from '../components/Team/TeamData';
-import { fadeIn } from '../Functions/GlobalAnimations'
+import { motion } from 'framer-motion'
+import { fadeIn, zoomIn } from '../Functions/GlobalAnimations'
 
 const TestimonialsCarouselData = [
   {
@@ -47,15 +31,15 @@ const TestimonialsCarouselData = [
 const ListData = [
   {
     icon: "feather-arrow-right-circle",
-    content: "Beautiful and easy to understand animations"
+    content: "Partnership in Accounting"
   },
   {
     icon: "feather-arrow-right-circle",
-    content: "Theme advantages are pixel perfect design",
+    content: "Success Through Collaboration",
   },
   {
     icon: "feather-arrow-right-circle",
-    content: "Find more creative ideas for your projects",
+    content: "Professional Financial Management",
   },
 ]
 
@@ -111,25 +95,17 @@ const AboutUsPage = (props) => {
 
   return (
     <div style={props.style}>
-     <ParallaxProvider>
-     <div className="h-[660px] lg:h-[580px] md:h-[550px] sm:h-[500px] xs:h-[380px] flex items-center overflow-hidden relative">
-    
-         <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(/assets/img/webp/audit.jpg)` }}></Parallax>
+      <motion.div className="md:flex md:items-center overflow-hidden relative md:h-[465px] sm:h-[350px] xs:h-[357px]" {...fadeIn}>
+      <div className="lg-no-parallax bg-cover cover-background absolute left-0 h-[80vh] top-[60px] lg:h-[64vh] lg:top-[-46px] lg:!translate-y-0 md:h-[60vh] md:-top-[30px] sm:top-[-44px] sm:h-[49vh] xs:top-0 xs:h-[40vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(assets/img/bb1.jpeg)` }}></div>
+      {/* <div className="absolute h-full w-full opacity-75 top-0 left-0 bg-gradient-to-tr from-[#0039e3] via-[#5e28dd] to-[#8600d4]"></div> */}
+      <Container className="h-full relative">
+
+     
+      </Container>
+      </motion.div>
   
-        <div className="absolute h-full w-full opacity-50 top-0 left-0 bg-darkgray"></div>
-        <Container>
-          <Row className="items-center justify-center">
-            <Col md={8} xl={6} lg={7} sm={9} className="relative text-center">
-              <h1 className="inline-block text-white opacity-60 mb-[20px] text-xmd leading-[20px] -tracking-[.5px] font-serif">About our company</h1>
-              <h2 className="font-serif text-white -tracking-[1px] text-[3.9rem] font-medium mb-0 sm:-tracking-[1px]">we are a creative design studio</h2>
-            </Col>
-            <ScrollTo to="about" offset={0} delay={0} spy={true} smooth={true} duration={800} className="absolute bottom-[50px] left-1/2 w-auto inline-block p-0 -translate-x-1/2 sm:bottom-7 xs:bottom-[4.5rem] cursor-pointer">
-              <i className="ti-arrow-down text-lg leading-[1] text-white bg-[#000000b3] p-[15px] xs:p-[10px] rounded-full flex justify-center items-center"></i>
-            </ScrollTo>
-          </Row>
-        </Container>
-      </div>
-      </ParallaxProvider>
+   
+    
      
       
      
@@ -137,28 +113,28 @@ const AboutUsPage = (props) => {
         <Container>
           <Row className="font-serif">
             <Col lg={4} className=" flex md:mb-[30px]">
-              <div className="w-full md:h-[700px] sm:h-[550px] xs:h-[450px] cover-background" style={{ backgroundImage: "url('/assets/img/webp/about.webp') " }}></div>
+              <div className="w-full md:h-[700px] sm:h-[550px] xs:h-[450px] cover-background" style={{ backgroundImage: "url('/assets/img/about.jpg') " }}></div>
             </Col>
             <Col lg={4} md={6} className=" flex items-center sm:mb-[30px]">
-              <div className="justify-center h-full w-full flex flex-col items-start bg-fastblue px-[5.5rem] lg:px-[3rem] md:p-16">
-                <span className="text-xlg lg:text-lg lg:leading-[26px] font-medium text-white mb-[20px] block">We started this company 10 years ago out of a desire to design and build amazing things.</span>
-                <p className="text-white font-sans opacity-70 mb-[20px] xs:mb-[15px]">Lorem ipsum is simply dummy text of the printing and typeing industry. Lorem ipsum has been the industry's standard dummy text ever since text.</p>
-                <Buttons href="/page/our-services" className="font-medium font-serif uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-[#fff] hover:text-[#fff]" color="#fff" title="Company overview" />
+              <div className="justify-center h-full w-full flex flex-col items-start bg-gray-300 px-[5.5rem] lg:px-[3rem] md:p-16">
+                <span className="text-xlg lg:text-lg lg:leading-[26px] font-medium text-black mb-[20px] block">Bookkeeping Solutions Dubai</span>
+                <p className="text-black font-sans opacity-70 mb-[20px] xs:mb-[15px]">Welcome to B & B Accounting services, your trusted partner for accounting and bookkeeping services in Dubai for over a decade. We specialize in providing tailored financial solutions to small and medium-sized businesses, ensuring compliance and promoting growth.</p>
+                {/* <Buttons href="/page/our-services" className="font-medium font-serif uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-[#fff] hover:text-[#fff]" color="#fff" title="Company overview" /> */}
               </div>
             </Col>
             <Col lg={4} md={6} className="flex flex-col pr-0">
               <img src="/assets/img/webp/about2.webp" alt="about us" className="sm:w-full" />
               <div className="bg-white px-[3.5rem] py-[3rem] h-full lg:p-8 sm:p-16">
-                <span className="text-darkgray font-medium mb-[10px] block">About digital agency</span>
-                <p className="font-sans">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text.</p>
+                <span className="text-darkgray font-medium mb-[10px] block">About B & B Accounting services in Dubai</span>
+                <p className="font-sans">Navigate Dubai’s tax landscape effortlessly with our expert tax preparation services, ensuring compliance and maximizing deductions.</p>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
     <ClientCarouselPage/>
-     
-    <m.section className="py-[130px] lg:py-[90px] md:py-[75px] xs:py-[50px]">
+   
+    <motion.section className="py-[130px] lg:py-[90px] md:py-[75px] xs:py-[50px]">
         <Container>
           <Row className="items-center">
             <Col lg={6} className="p-0 md:mb-[50px] border-white border-[12px] rounded-lg shadow-[0_0_15px_rgba(0,0,0,0.1)]">
@@ -189,14 +165,14 @@ const AboutUsPage = (props) => {
               </div>
             </Col>
             <Col lg={{ span: 5, offset: 1 }} >
-              <h5 className="font-serif text-darkgray font-medium">It is teamwork that makes the dream work.</h5>
-              <p>With years of experience in the website design and development industry ThemeZaa pride ourselves on creating unique, creative &amp; quality designs that are developed upon the latest coding.</p>
+              <h5 className="font-serif text-darkgray font-medium">Teamwork for Financial Success</h5>
+              <p>Partner with Us for Financial Success! At B&B Accounting, we believe in building lasting relationships with our clients. Our dedicated team of accounting and bookkeeping professionals works hand-in-hand with you, ensuring transparency and trust at every step. Together, we’ll navigate the complexities of financial management, empowering your business to thrive.Join us on the path to success—where your goals become our mission</p>
               <Lists theme="list-style-02" data={ListData} className="mb-12 mt-8 text-darkgray font-serif" animation="" />
               <Buttons href="/page/contact-modern" className="btn-fill font-medium font-serif rounded-[4px] uppercase md:mb-[15px]" themeColor="#0038e3" color="#fff" size="md" title="Get Started Now" />
             </Col>
           </Row>
         </Container>
-      </m.section>
+      </motion.section>
      
       
     

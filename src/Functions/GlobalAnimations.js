@@ -1,4 +1,4 @@
-const isMobile = false; // Animation stop at 768
+const isMobile = true; // Animation stop at 768
 
 const fadeIn = !isMobile
   ? {

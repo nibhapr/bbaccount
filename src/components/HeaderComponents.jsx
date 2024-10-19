@@ -40,10 +40,10 @@ const HeaderDigitallink = (props) => {
               </Col>
               <Col className="col-auto none sm:block text-end lg:px-0">
                 <span className="top-bar-contact-list border-l border-inherit	py-[9px] px-[18px] text-[13px] inline-block float-left">
-                  <i className="feather-phone-call text-darkgray mr-[6px] text-md relative top-[1px]"></i>  0222 8899900
+                  <i className="feather-phone-call text-darkgray mr-[6px] text-md relative top-[1px]"></i> +971552739479
                 </span>
                 <span className="border-l border-inherit py-[9px] pl-[18px] text-[13px] inline-block float-left border-r-0 pr-0">
-                  <i className="feather-map-pin text-darkgray mr-[6px] text-md relative top-[1px]"></i> 401 Broadway, 24th Floor, San Francisco
+                  <i className="feather-map-pin text-darkgray mr-[6px] text-md relative top-[1px]"></i> Burdubai,United Arab Emirates
                 </span>
               </Col>
             </Row>
@@ -53,8 +53,8 @@ const HeaderDigitallink = (props) => {
           <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
             <a aria-label="header logo" className="flex items-center" to="/">
               <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-gradient-sky-blue-pink.webp' data-rjs='/assets/img/webp/logo-gradient-sky-blue-pink@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-black.webp' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
+                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/sample.jpg' data-rjs='/assets/img/webp/logo-gradient-sky-blue-pink@2x.webp' alt='logo' />
+                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/sample.jpg' data-rjs='/assets/img/webp/logo-black@2x.webp' alt='logo' />
                 <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-gradient-sky-blue-pink.webp' data-rjs='/assets/img/webp/logo-gradient-sky-blue-pink@2x.webp' alt='logo' />
               </Navbar.Brand>
             </a>

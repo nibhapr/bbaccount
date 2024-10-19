@@ -1,16 +1,7 @@
 import React, { memo } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { Link } from "react-router-dom"
-
 import { m } from 'framer-motion'
-
-// Components
-// import { addZeroBeforeNumber } from "../../Functions/Utilities";
-
-// Data
 import { fancyTextBox01 } from '../FancyTextBox/FancyTextBoxData'
-
-// css
 import "../../assets/scss/components/_fancytextbox.scss"
 
 const FancyTextBoxSwitch = (params, item, i) => {
@@ -109,14 +100,22 @@ const FancyTextBoxSwitch = (params, item, i) => {
     }
 }
 
-const FancyTextBox = (props) => {
+const FancyTextBox = ({
+    data = fancyTextBox01,
+    theme = "fancy-text-box-01",
+    animationDelay = 0.2,
+    grid = "",
+    themeColor = "",
+    className = "",
+    animation = {},
+}) => {
     return (
-        <Row className={`${props.theme}${props.grid ? ` ${props.grid}` : ""}`}>
+        <Row className={`${theme}${grid ? ` ${grid}` : ""}`}>
             {
-                props.data.map((item, i) => {
+                data.map((item, i) => {
                     return (
-                        <m.div className={`col${props.themeColor ? ` ${props.themeColor}` : ""}${props.className ? ` ${props.className}` : ""}`} key={i} {...{ ...props.animation, transition: { delay: i * props.animationDelay } }}>
-                            {FancyTextBoxSwitch(props, item, i)}
+                        <m.div className={`col${themeColor ? ` ${themeColor}` : ""}${className ? ` ${className}` : ""}`} key={i} {...{ ...animation, transition: { delay: i * animationDelay } }}>
+                            {FancyTextBoxSwitch(item, i)}
                         </m.div>
                     )
                 })}
@@ -124,11 +123,7 @@ const FancyTextBox = (props) => {
     )
 }
 
-FancyTextBox.defaultProps = {
-    data: fancyTextBox01,
-    theme: "fancy-text-box-01",
-    animationDelay: 0.2,
-}
+
 
 
 

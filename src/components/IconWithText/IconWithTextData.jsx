@@ -35,23 +35,23 @@ const IconWithTextData_02 = [
     {
         icon: "line-icon-Navigation-LeftWindow text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
         title: "Accounting Services",
-        content: "At [Your Company Name], we offer comprehensive accounting services designed to streamline your financial operations and ensure compliance with UAE regulations. Our expert team manages everything from daily bookkeeping to complex financial reporting, allowing you to focus on growing your business. With our meticulous attention to detail and up-to-date knowledge of local accounting standards, we help you maintain accurate financial records, optimize your financial performance, and achieve your business objectives",
+        content: "At B & B Accounting service, we offer comprehensive accounting services designed to streamline your financial operations and ensure compliance with UAE regulations. Our expert team manages everything from daily bookkeeping to complex financial reporting, allowing you to focus on growing your business. With our meticulous attention to detail and up-to-date knowledge of local accounting standards, we help you maintain accurate financial records, optimize your financial performance, and achieve your business objectives",
     },
     {
         icon: "line-icon-CursBusiness Setup Servicesor-Click2 text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
         title: "Business Setup Services",
         content: "Navigating the complexities of setting up a business in the UAE can be challenging. [Your Company Name] specializes in providing end-to-end business setup services, ensuring a seamless and efficient process from initial planning to final registration. Whether you're starting a new venture or expanding an existing business, our experienced consultants guide you through every step, including legal documentation, licensing, and regulatory compliance. Let us handle the red tape so you can focus on turning your business vision into reality.",
     },
-    {
-        icon: "line-icon-Archery-2 text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
-        title: "VAT Consultancy",
-        content: "Understanding and managing VAT regulations is crucial for any business operating in the UAE. [Your Company Name] offers expert VAT consultancy services to help you navigate the complexities of VAT compliance. Our team provides tailored advice on VAT registration, filing returns, and ensuring adherence to the latest VAT laws. We help you optimize your VAT strategy, mitigate risks, and avoid penalties, ensuring that your business remains compliant and efficient in a constantly evolving tax environment.",
-    },
-    {
-        icon: "line-icon-Female text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
-        title: "International Auditing",
-        content: "For businesses with global operations or aspirations, [Your Company Name] provides top-notch international auditing services. Our skilled auditors conduct thorough and objective audits, ensuring compliance with international accounting standards and enhancing the transparency of your financial practices. We deliver detailed audit reports that provide valuable insights into your business’s financial health, helping you make informed decisions and build credibility with stakeholders across borders",
-    },
+    // {
+    //     icon: "line-icon-Archery-2 text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
+    //     title: "VAT Consultancy",
+    //     content: "Understanding and managing VAT regulations is crucial for any business operating in the UAE. B & B Accounting service offers expert VAT consultancy services to help you navigate the complexities of VAT compliance. Our team provides tailored advice on VAT registration, filing returns, and ensuring adherence to the latest VAT laws. We help you optimize your VAT strategy, mitigate risks, and avoid penalties, ensuring that your business remains compliant and efficient in a constantly evolving tax environment.",
+    // },
+    // {
+    //     icon: "line-icon-Female text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
+    //     title: "International Auditing",
+    //     content: "For businesses with global operations or aspirations, [Your Company Name] provides top-notch international auditing services. Our skilled auditors conduct thorough and objective audits, ensuring compliance with international accounting standards and enhancing the transparency of your financial practices. We deliver detailed audit reports that provide valuable insights into your business’s financial health, helping you make informed decisions and build credibility with stakeholders across borders",
+    // },
 ]
 
 const IconWithTextData_03 = [

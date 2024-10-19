@@ -1,19 +1,12 @@
 import React, { memo } from 'react'
 import '../../assets/css/custom.css'
-
-// Libraries
-import { Row } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 import PropTypes from "prop-types"
-
-// Components
 import Buttons from '../Button/Buttons'
-
-// Data
 import { InteractiveBannersData02 } from './InteractiveBannersData'
-import { style } from 'framer-motion/client';
+
 
 const InteractiveBanners02 = (props) => {
     const swiperRef = React.useRef(null)
@@ -24,7 +17,7 @@ const InteractiveBanners02 = (props) => {
                     props.data.map((item, i) => {
                         return (
                             <SwiperSlide key={i} className="my-swiper">
-                                <m.div className="interactivebanners-main" {...{ ...props.animation, transition: { delay: i * props.animationDelay } }}>
+                                <motion.div className="interactivebanners-main" {...{ ...props.animation, transition: { delay: i * props.animationDelay } }}>
                                     <div className="relative overflow-hidden overlay-bg">
                                         {item.img && <img height="235" width="210" className="interactiveanners-img" src={item.img} alt="interactive banners" />}
                                     </div>
@@ -33,7 +26,7 @@ const InteractiveBanners02 = (props) => {
                                         {item.title && <div className="interactivebanners-title mb-[10px] text-white text-xlg font-serif lg:text-[18px]">{item.title}</div>}
                                         {(item.btnTitle && item.btnLink) && <Buttons ariaLabel="interactive button" to={item.btnLink} title={item.btnTitle} className="btn-fill btn-fancy rounded-[3px] mt-[15px] font-medium font-serif uppercase md:mb-[15px]" themeColor="#fff" color="#232323" size="xs" />}
                                     </div>
-                                </m.div>
+                                </motion.div>
                             </SwiperSlide>
                         )
                     })

@@ -20,7 +20,7 @@ const GoogleMap = (props) => {
 }
 
 GoogleMap.defaultProps = {
-    location: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8404599049227!2d144.95373931590427!3d-37.81720574201434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1653971982572!5m2!1sen!2sin"
+    location: "https://www.google.com/maps/dir/11.1345664,75.9563316/B%26+B+ACCOUNTING+DUBAI/@16.9852248,43.8812795,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3e5f5da1eaef86cd:0x6216e72c96fdb935!2m2!1d55.3388001!2d25.2772726?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
 }
 
 

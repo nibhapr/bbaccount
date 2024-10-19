@@ -49,27 +49,27 @@ const fancyTextBox02 = [
             class: "line-icon-Mail-Read text-basecolor"
         },
         title: "How can we help you?",
-        description: "Lorem ipsum is simply dummy text of the printing industry",
+        description: "Email:info@bbaccount.ae",
         linkTitle: "Send us an email",
-        link: "mailto:info@yourdomain.com"
+        link: "mailto:info@bbaccounting.com"
     },
     {
         icon: {
             class: "line-icon-Phone-2 text-basecolor"
         },
         title: "Feel free to get in touch?",
-        description: "Lorem ipsum is simply dummy text of the printing industry",
+        description: "+971552739479",
         linkTitle: "Give us a call today",
-        link: "#"
+        link: "tel:+971553308608"
     },
     {
         icon: {
             class: "line-icon-Approved-Window text-basecolor"
         },
         title: "Ready to request a quote?",
-        description: "Lorem ipsum is simply dummy text of the printing industry",
+        description: "Fill the form .We will contact you",
         linkTitle: "Describe your project",
-        link: "#"
+        link: "/contact"
     }
 ]
 

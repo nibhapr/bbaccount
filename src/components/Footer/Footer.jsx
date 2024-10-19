@@ -1,14 +1,15 @@
 import React, { memo, useContext, useEffect } from "react"
-import { Col } from "react-bootstrap"
+import { Col,Container, Row } from "react-bootstrap"
 import GlobalContext from "../../Context/Context"
 import "../../assets/scss/layouts/_footer.scss"
+import logo from "../../assets/img/sample.jpg"
 
 export const Footer = (props) => {
-    // Add Global Data
+   
     const { setFooterHeight } = useContext(GlobalContext);
 
     useEffect(() => {
-        // Calculate Footer Height
+   
         let footerEl = document.querySelector("footer");
 
         function setTopSpace() {
@@ -91,26 +92,36 @@ export const Footer = (props) => {
 const FooterMenu = ({ data, titleClass, className, ...props }) => {
     return (
         <>
-            {data.map((item, i) => {
-                return (
-                    <Col key={i} {...props} className={`footer-menu${className ? ` ${className}` : ""}`}>
-                        {item.title && <span className={`mb-[20px] block font-medium font-serif xs:!mb-[10px]${titleClass ? ` ${titleClass}` : ""}`}>{item.title}</span>}
-                        <ul>
-                            {item.submenu.map((item, i) => {
-                                return ((item.link || item.title) && <li key={i} className="mb-[7px] last:mb-0"><a aria-label="footer menu link" to={item.link}>{item.title}</a></li>)
-                            })}
-                        </ul>
-                    </Col>
-                )
-            })}
+           
+            <div className="py-[40px] border-t border-[#ffffff1a]">
+            <Container>
+                    <Row>
+                        <Col md={3} className="sm:mb-[20px]">
+                            <a aria-label="homepage" to="/" className="sm:flex sm:justify-center">
+                                <img alt="logo" src="../../assets/img/sample.jpg" width="111" height="36" />
+                            </a>
+                        </Col>
+                        <Col md={6} className="flex justify-center items-center text-center sm:mb-[20px]">
+                            <p className="mb-0">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" href="https://www.themezaa.com/" className="hover:text-white" target="_blank"> ThemeZaa</a></p>
+                        </Col>
+                        <Col md={3} className="text-right sm:text-center">
+
+                        </Col>
+                    </Row>
+                    </Container>
+            </div>
         </>
+        
+        
     )
+    
 }
 
 
 
 Footer.defaultProps = {
-    theme: "dark"
+    theme: "dark",
+    logo: "/assets/img/sample.jpg"
 }
 
 export default memo(FooterMenu)

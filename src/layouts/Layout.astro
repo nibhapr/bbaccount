@@ -2,6 +2,7 @@
 import HeaderComponents from '../components/HeaderComponents';
 import HeaderData from '../components/Header/HeaderData'
 import FooterComponents from "../components/FooterComponents";
+import Whatsapp from "../components/Whatsapp";
 interface Props {
 	title: string;
 }
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	<body>
 		<HeaderComponents {...HeaderData}  client:load/>
 		<slot />
+		<Whatsapp client:load />
 		<FooterComponents client:load/>
 	</body>
 </html>

@@ -16,8 +16,8 @@ const ClientCarouselPage = () => {
         <Container>
           <Row>
           <m.div className="text-center mb-20 md:mb-12 col-lg-12 col-sm-8">
-              <span className="text-xmd mb-[15px] font-serif block w-full">Browse amazing social media features</span>
-              <h5 className="font-serif text-darkgray font-medium mb-8 sm:w-full">We offer a full range of digital marketing services!</h5>
+              <span className="text-xmd mb-[15px] font-serif block w-full">B & B Accounting services in Dubai</span>
+              <h5 className="font-serif text-darkgray font-medium mb-8 sm:w-full">Our Partners</h5>
             </m.div>
             <Col className="relative">
               <Clients

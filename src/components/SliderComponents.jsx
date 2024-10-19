@@ -5,7 +5,7 @@ const SwiperData = [
     {
       img: "/assets/img/webp/accounting.webp",
       title: "VAT and TAX Service in U.A.E",
-      subtitle: "Delivering beautiful digital products",
+      subtitle: "Accounting services in Dubai",
     },
     {
       img: "/assets/img/webp/account1.webp",
@@ -19,13 +19,11 @@ const SwiperData = [
     },
   ]
   
-  
-
 const HomeBusinessPage = (props) => {
     return (
      
 <section className="relative h-screen md:h-[600px] sm:h-[500px]">
-    <Swiper
+  <Swiper
   className="h-full relative"
   modules={[Pagination, Autoplay]}
   slidesPerView={1}

@@ -72,22 +72,22 @@ const TestimonialsData03 = [
     name: "Herman Miller",
     designation: "ThemeZaa Design",
     content:
-      "Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.",
-    img: "https://via.placeholder.com/125x125",
+      "Partnering with B&B Accounting has transformed our financial management. Their team is incredibly professional and attentive, ensuring that every detail is accounted for.",
+    img: "assets/img/avatar.webp",
   },
   {
     name: "Jeremy Girard",
     designation: "Microsoft Corporation",
     content:
-      "Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.",
-    img: "https://via.placeholder.com/125x125",
+      "As a small business owner in Dubai, I was overwhelmed with the complexities of bookkeeping.B&B Accounting has taken that burden off my shoulders.Their responsive customer service is a bonus!",
+    img: "assets/img/avatar.webp",
   },
   {
     name: "Alexander Harvard",
     designation: "ThemeZaa Design",
     content:
-      "Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.",
-    img: "https://via.placeholder.com/125x125",
+      "I can’t thank B&B Accounting enough for their outstanding accounting services. They have streamlined our bookkeeping processes and helped us save both time and money.",
+    img: "assets/img/avatar.webp",
   },
 ];
 

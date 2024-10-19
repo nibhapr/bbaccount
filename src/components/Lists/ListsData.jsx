@@ -1,20 +1,17 @@
 const ListData01 = [
     {
         icon: "fas fa-check",
-        content: "Advanced customization theme options",
+        content: "Monthly and annual financial reporting",
     },
     {
         icon: "fas fa-check",
-        content: "Manage and share your workspace",
+        content: "Monthly and annual financial reporting",
     },
     {
         icon: "fas fa-check",
-        content: "Powerful theme for creatives designer",
+        content: "Monthly and annual financial reporting",
     },
-    {
-        icon: "fas fa-check",
-        content: "Browse amazing popular social features",
-    },
+   
 ]
 
 const ListData02 = [
@@ -96,7 +93,7 @@ const ListData06 = [
         content: "Present your services with flexible, convenient and multipurpose",
     },
     {
-        content: "Find more creative ideas for your projects",
+        content: "",
     },
     {
         content: "Unlimited power and customization possibilities",

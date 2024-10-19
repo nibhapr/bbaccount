@@ -1,16 +1,8 @@
 import React, { memo } from 'react'
-
-// Libraries
 import { Col, Tab, Tabs } from 'react-bootstrap'
-
 import { m } from "framer-motion";
-
-// Components
 import Buttons from '../Button/Buttons'
-
 import "../../assets/scss/components/_tab.scss"
-
-// Data
 import { TabData01 } from '../Tab/TabData'
 
 const Tab01 = (props) => {

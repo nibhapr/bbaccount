@@ -3,7 +3,7 @@ const InteractiveBannersData01 = [
         subtitle: "Branding",
         title: "Leading branding agency based in washington",
         btnLink: "/blogs/blog-post-layout-01",
-        img: "https://via.placeholder.com/798x577",
+        img: "/assets/img/acc1.jpg",
         icon: "line-icon-Arrow-OutRight"
     },
     {
@@ -21,7 +21,7 @@ const InteractiveBannersData01 = [
         icon: "line-icon-Arrow-OutRight"
     },
     {
-        subtitle: "Marketing",
+        subtitle: "Professional bookkeeping solutions",
         title: "Reach your ideal customers on the largest network",
         btnLink: "/blogs/blog-post-layout-04",
         img: "https://via.placeholder.com/798x577",
@@ -31,54 +31,41 @@ const InteractiveBannersData01 = [
 
 const InteractiveBannersData02 = [
     {
-        subtitle: "Flexible",
+        subtitle: "Tax preparation and filing UAE",
         title: "Bundle of layout type different layout",
-        img: "https://via.placeholder.com/915x716",
+        img: "/assets/img/acc1.jpg",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
-        subtitle: "Unique",
+        subtitle: "Financial statement preparation",
         title: "We are delivering beautiful products",
-        img: "https://via.placeholder.com/915x716",
+        img: "/assets/img/acc2.jpg",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
-        subtitle: "Responsive",
+        subtitle: "Professional bookkeeping solutions",
         title: "True responsiveness modern responsive",
-        img: "https://via.placeholder.com/915x716",
+        img: "/assets/img/acc3.jpg",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
-        subtitle: "Modern",
+        subtitle: "Outsourced bookkeeping UAE",
         title: "Beautiful and modern latest page builder",
-        img: "https://via.placeholder.com/915x716",
+        img: "/assets/img/acc3.jpg",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
     {
-        subtitle: "Flexible",
+        subtitle: "Small business accounting services",
         title: "Bundle of layout type different layout",
-        img: "https://via.placeholder.com/915x716",
+        img: "/assets/img/acc3.jpg",
         btnTitle: "Learn more",
         btnLink: "/page/about-us"
     },
-    {
-        subtitle: "Unique",
-        title: "We are delivering beautiful products",
-        img: "https://via.placeholder.com/915x716",
-        btnTitle: "Learn more",
-        btnLink: "/page/about-us"
-    },
-    {
-        subtitle: "Responsive",
-        title: "True responsiveness modern responsive",
-        img: "https://via.placeholder.com/915x716",
-        btnTitle: "Learn more",
-        btnLink: "/page/about-us"
-    },
+   
 ]
 
 const InteractiveBannersData03 = [

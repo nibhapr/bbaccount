@@ -2,32 +2,17 @@ import React, { useEffect, useState, useContext, useRef, memo } from "react";
 
 // Libraries
 import * as Yup from "yup";
-// import PropTypes from "prop-types";
 import { Formik, Form } from "formik";
 import { useScroll } from "framer-motion";
-
 import { Accordion, Container, Navbar } from "react-bootstrap";
 import useOnClickOutside from "../../Functions/UseOnClickOutside";
-
-// Component
 import { Input } from '../../components/Form/Form'
-import Buttons from '../../components/Button/Buttons';
 import ReactCustomScrollbar from "../ReactCustomScrollbar";
-
-
-// Context
- import GlobalContext from "../../Context/Context";
-
-// Data
+import GlobalContext from "../../Context/Context";
 import HeaderData from "../Header/HeaderData";
-
-// css
 import "../../assets/scss/layouts/_header.scss"
-
-/* Header Component Start */
 export const Header = memo((props) => {
-  // Add Global Header Data
-   const { setHeaderHeight } = useContext(GlobalContext);
+  const { setHeaderHeight } = useContext(GlobalContext);
   const { scrollY } = useScroll();
   const [scrollPos, setScrollPos] = useState({
     y: 0,
@@ -39,8 +24,7 @@ export const Header = memo((props) => {
   useEffect(() => {
     let headerEl = document.querySelector("header");
 
-    // Calculate header height
-    function setTopSpace() {
+       function setTopSpace() {
       let windowWidth = window.innerWidth,
         headerheight = (props.topSpace.desktop && props.topSpace.desktop === true) ? headerEl.offsetHeight : 0;
 
@@ -75,7 +59,7 @@ export const Header = memo((props) => {
       document.body.style.removeProperty("overflow");
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, );
 
   useEffect(() => {
@@ -115,10 +99,9 @@ export const Header = memo((props) => {
     </header>
   );
 });
-/* Header Component End */
 
-/* Headernav Component Start */
-export const HeaderNav = (props) => {
+export const HeaderNav = (props
+) => {
   const handleMenuToggle = () => {
     let header = document.querySelector("header"),
       menu = header.querySelector(".navbar-nav"),
@@ -220,7 +203,7 @@ export const Menu = memo((props) => {
             <li className={`nav-item${item.dropdown || item.megamenu ? ` dropdown` : ""}${isMenuActive === i ? " open" : ""}`} key={i}>
               {
                 item.link ? (
-                  <a className="nav-link" a to={item.link}>
+                  <a className="nav-link" href={item.link}>
                     {item.title}
                   </a>
                 ) : (
@@ -535,9 +518,7 @@ export const MobileMenu = (props) => {
     </div>
   );
 };
-/* Mobile Menu Component End */
 
-/* HamburgerMenu Component Start */
 export const HamburgerMenu = memo((props) => {
   const ref = useRef(null);
   const [show, setShow] = useState(false);
@@ -596,9 +577,7 @@ export const HamburgerMenu = memo((props) => {
     </>
   );
 });
-/* HamburgerMenu Component End */
 
-/* Searchbar Component Start */
 export const SearchBar = memo((props) => {
    const { setIsModalOpen } = useContext(GlobalContext);
   const ref = useRef(null);
@@ -702,9 +681,7 @@ export const SearchBar = memo((props) => {
     </div>
   );
 });
-/* Search-bar Component End */
 
-/* HeaderLanguage Component Start */
 export const HeaderLanguage = (props) => {
   return (
     <div className={`header-language dropdown inline-block align-middle pl-[17px] text-[17px]${props.className ? ` ${props.className}` : ""}`} style={props.style}>
@@ -725,130 +702,13 @@ export const HeaderLanguage = (props) => {
             English
           </a>
         </li>
-        <li>
-          <a aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="England">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/webp/england.webp"
-                alt="england"
-                width="16"
-                height="16"
-              />
-            </span>
-            England
-          </a>
-        </li>
-        <li>
-          <a aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="France">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/webp/france.webp"
-                alt="france"
-                width="16"
-                height="16"
-              />
-            </span>
-            France
-          </a>
-        </li>
-        <li>
-          <a aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="Russian">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/webp/russian.webp"
-                alt="russian"
-                width="16"
-                height="16"
-              />
-            </span>
-            Russian
-          </a>
-        </li>
-        <li>
-          <a aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="Spain">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/webp/spain.webp"
-                alt="spain"
-                width="16"
-                height="16"
-              />
-            </span>
-            Spain
-          </a>
-        </li>
+       
+       
       </ul>
     </div>
   );
 };
-/* HeaderLanguage Component End */
 
-// export const HeaderCart = (props) => {
-//   return (
-//     <div className={`header-cart-icon dropdown mr-[10px] inline-block align-middle pl-[17px] text-[17px]${props.className ? ` ${props.className}` : ""}`} style={props.style}>
-//       <a aria-label="link" to="#" className="relative inline-block">
-//         <i className={`feather-shopping-bag px-0 py-[30px] inline-block ${props.className}`} ></i>
-//         <span className="cart-count font-serif bg-basecolor text-white absolute top-[20px] right-[-10px] w-[16px] h-[16px] text-center text-[9px] leading-[16px] rounded-full">
-//           2
-//         </span>
-//       </a>
-//       <ul id="myTable" className="dropdown-menu block cart-item-list">
-//         <li className="cart-item items-center">
-//           <a aria-label="link" to="#" className="font-serif close"> × </a>
-//           <div className="product-image">
-//             <a aria-label="link" to="#">
-//               <img src="https://via.placeholder.com/150x191" className="cart-thumb" alt="cart-product" width={50} height={67} />
-//             </a>
-//           </div>
-//           <div className="product-detail font-serif">
-//             <a aria-label="link" to="#">Delica omtantur</a>
-//             <span className="item-ammount">$100.00</span>
-//           </div>
-//         </li>
-//         <li className="cart-item items-center">
-//           <a aria-label="link" to="#" className="font-serif close"> × </a>
-//           <div className="product-image">
-//             <a aria-label="link" to="#">
-//               <img src="https://via.placeholder.com/150x191" className="cart-thumb" alt="cart-product" width={50} height={67} />
-//             </a>
-//           </div>
-//           <div className="product-detail font-serif">
-//             <a aria-label="link" to="#">Gianvito rossi</a>
-//             <span className="item-ammount">$99.99</span>
-//           </div>
-//         </li>
-//         <li className="cart-item cart-total">
-//           <div className="font-serif mb-[15px] w-full">
-//             <span className="w-[50%] inline-block text-md uppercase">
-//               Subtotal:
-//             </span>
-//             <span className="w-[50%] inline-block text-right text-md font-medium">
-//               $199.99
-//             </span>
-//           </div>
-//           <Buttons
-//             to="/shop/shopping-cart"
-//             className="btn-fill rounded-none font-medium font-serif uppercase md:mb-[15px]"
-//             themeColor="#232323"
-//             color="#fff"
-//             size="sm"
-//             title="view cart"
-//           />
-//           <Buttons
-//             to="/shop/checkout"
-//             className="btn-fill rounded-none font-medium font-serif mb-0 uppercase sm:mb-[15px]"
-//             themeColor="#0038e3"
-//             color="#fff"
-//             size="sm"
-//             title="checkout"
-//           />
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// };
-
-/* Collapsible Menu Component Start */
 export const CollapsibleMenu = (props) => {
   const collapsibleMenu = useRef(null)
   let location = useLocation()
@@ -1019,18 +879,11 @@ export const CollapsibleMenu = (props) => {
     </Accordion>
   );
 };
-/* Collapsible Menu Component End */
 
- Header.defaultProps = {
-   topSpace: {
-     desktop: false,
-  },
- };
 
-// Header.propTypes = {
-//   type: PropTypes.string,
-//   topSpace: PropTypes.object,
-// };
+
+
+
 
 HeaderNav.defaultProps = {
   fluid: "lg",
@@ -1039,12 +892,6 @@ HeaderNav.defaultProps = {
   expand: "lg",
 };
 
-// HeaderNav.propTypes = {
-//   fluid: PropTypes.string,
-//   theme: PropTypes.string,
-//   bg: PropTypes.string,
-//   className: PropTypes.string,
-// };
 
 HamburgerMenu.defaultProps = {
   theme: "light",
@@ -1052,11 +899,6 @@ HamburgerMenu.defaultProps = {
   closeBtn: true,
 };
 
-// HamburgerMenu.propTypes = {
-//   theme: PropTypes.string,
-//   position: PropTypes.string,
-//   closeBtn: PropTypes.bool,
-// };
 
 Menu.defaultProps = {
   data: HeaderData,
@@ -1067,8 +909,6 @@ MobileMenu.defaultProps = {
   data: HeaderData,
 };
 
-// MobileMenu.propTypes = {
-//   type: PropTypes.string,
-// };
+
 
 export default Header;
